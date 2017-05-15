@@ -9,8 +9,9 @@ function UserController(user) {
 
 UserController.prototype.update = function(label, data) {
 
-	
-	
+	alert('update controller');
+
+
 }
 
 

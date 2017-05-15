@@ -31,6 +31,9 @@ observable.prototype.removeObserver = function(observer) {
 
 observable.prototype.notify = function(label, data) {
 
+	// pour voir les données a chaque fois qu'une notif est envoyée
+	console.log(label, data);
+
 	// on parcours notre tableau d'observers
 	this.observers.forEach(function(obs) {
 
