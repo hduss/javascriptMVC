@@ -9,7 +9,13 @@ function UserController(user) {
 
 UserController.prototype.update = function(label, data) {
 
-	alert('update controller');
+	// on verify si la notif est la bonne
+	if (label === 'change-username') {
+
+		//si vrai, on set le username
+		this.model.setUsername(data.username);
+
+	};
 
 
 }

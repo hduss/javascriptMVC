@@ -4,7 +4,7 @@ function User(username) {
 
 	//heritage
 	observable.call(this);
-	
+
 	this.username = username;
 }
 
@@ -15,6 +15,15 @@ User.prototype.constructor = User;
 
 
 User.prototype.setUsername = function(username) {
+
+	this.username = username;
+
+
+	this.notify('changed', {
+
+		username: username
+	});
+
 
 
 
